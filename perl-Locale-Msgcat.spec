@@ -9,6 +9,7 @@ Release:	7
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
+# Source0-md5:	8dbfee7b81e94cf946c9f28ab0bc5291
 URL:		http://www.cpan.org/
 BuildRequires:	perl-devel >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
