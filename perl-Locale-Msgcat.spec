@@ -20,7 +20,7 @@ Summary(uk):	Модуль для Perl %{pdir}::%{pnam}
 Summary(zh_CN):	%{pdir}::%{pnam} Perl дё©И
 Name:		perl-Locale-Msgcat
 Version:	1.03
-Release:	6
+Release:	7
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
@@ -43,7 +43,8 @@ systemach.
 %setup -q -n %{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL OPTIMIZE="%{rpmcflags}"
+%{__perl} Makefile.PL OPTIMIZE="%{rpmcflags}" \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -56,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_sitearch}/Locale/*.pm
-%dir %{perl_sitearch}/auto/Locale/Msgcat
-%{perl_sitearch}/auto/Locale/Msgcat/*.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Locale/Msgcat/*.so
+%{perl_vendorarch}/Locale/*.pm
+%dir %{perl_vendorarch}/auto/Locale/Msgcat
+%{perl_vendorarch}/auto/Locale/Msgcat/*.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Locale/Msgcat/*.so
