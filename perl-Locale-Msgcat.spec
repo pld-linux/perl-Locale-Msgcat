@@ -20,7 +20,7 @@ Msgcat module for perl.
 %setup -q -n Msgcat-%{version} 
 
 %build
-CFLAGS="%{?debug:-O0 -g}%{!?debug:$RPM_OPT_FLAGS}" perl Makefile.PL
+CFLAGS="%{rpmcflags}" perl Makefile.PL
 %{__make}
 
 %clean 
