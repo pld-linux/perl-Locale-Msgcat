@@ -25,7 +25,7 @@ License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 URL:		http://www.cpan.org/
-BuildRequires:	perl >= 5.6
+BuildRequires:	perl-devel >= 5.6
 Requires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
