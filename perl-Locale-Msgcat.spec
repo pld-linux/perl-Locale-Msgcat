@@ -21,7 +21,7 @@ Summary(zh_CN):	%{pdir}::%{pnam} Perl Ä£¿é
 Name:		perl-Locale-Msgcat
 Version:	1.03
 Release:	5
-License:	GPL
+License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 URL:		http://www.cpan.org/
@@ -30,10 +30,14 @@ Requires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Msgcat module for perl.
+The Locale::Msgcat module allows access to the XPG4 message catalog
+functions (catopen(3), catgets(3) and catclose(4)), which are available
+on some systems.
 
 %description -l pl
-Modu³ perla Msgcat.
+Modu³ Locale::Msgcat oferuje dostêp do katalogu komunikatów XPG4 poprzez
+funkcje catopen(3), catgets(3) and catclose(4), dostêpne na niektórych
+systemach.
 
 %prep
 %setup -q -n %{pnam}-%{version} 
