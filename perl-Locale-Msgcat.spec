@@ -15,12 +15,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The Locale::Msgcat module allows access to the XPG4 message catalog
-functions (catopen(3), catgets(3) and catclose(4)), which are
+functions (catopen(3), catgets(3) and catclose(3)), which are
 available on some systems.
 
 %description -l pl
 Modu³ Locale::Msgcat oferuje dostêp do katalogu komunikatów XPG4
-poprzez funkcje catopen(3), catgets(3) and catclose(4), dostêpne na
+poprzez funkcje catopen(3), catgets(3) and catclose(3), dostêpne na
 niektórych systemach.
 
 %prep
