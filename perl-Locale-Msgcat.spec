@@ -3,7 +3,7 @@ Summary:	Msgcat module for perl (Locale)
 Summary(pl):	Modu³ perla Msgcat
 Name:		perl-Locale-Msgcat
 Version:	1.03
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Locale/Msgcat-%{version}.tar.gz
