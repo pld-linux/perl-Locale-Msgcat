@@ -1,12 +1,29 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	Msgcat module for perl (Locale)
-Summary(pl):	Modu³ perla Msgcat
+%define	pdir	Locale
+%define	pnam	Msgcat
+Summary:	%{pdir}::%{pnam} perl module 
+Summary(cs):	Modul %{pdir}::%{pnam} pro Perl
+Summary(da):	Perlmodul %{pdir}::%{pnam}
+Summary(de):	%{pdir}::%{pnam} Perl Modul
+Summary(es):	Módulo de Perl %{pdir}::%{pnam}
+Summary(fr):	Module Perl %{pdir}::%{pnam}
+Summary(it):	Modulo di Perl %{pdir}::%{pnam}
+Summary(ja):	%{pdir}::%{pnam} Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	%{pdir}::%{pnam} ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul %{pdir}::%{pnam}
+Summary(pl):	Modu³ perla %{pdir}::%{pnam}
+Summary(pt_BR):	Módulo Perl %{pdir}::%{pnam}
+Summary(pt):	Módulo de Perl %{pdir}::%{pnam}
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl %{pdir}::%{pnam}
+Summary(sv):	%{pdir}::%{pnam} Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl %{pdir}::%{pnam}
+Summary(zh_CN):	%{pdir}::%{pnam} Perl Ä£¿é
 Name:		perl-Locale-Msgcat
 Version:	1.03
 Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/Locale/Msgcat-%{version}.tar.gz
+Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 URL:		http://www.cpan.org/
 BuildRequires:	perl >= 5.6
 Requires:	perl >= 5.6
@@ -19,19 +36,19 @@ Msgcat module for perl.
 Modu³ perla Msgcat.
 
 %prep
-%setup -q -n Msgcat-%{version} 
+%setup -q -n %{pnam}-%{version} 
 
 %build
-CFLAGS="%{rpmcflags}" perl Makefile.PL
+perl Makefile.PL OPTIMIZE="%{rpmcflags}" 
 %{__make}
-
-%clean 
-rm -rf $RPM_BUILD_ROOT
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
+
+%clean 
+rm -rf $RPM_BUILD_ROOT
 
 %files 
 %defattr(644,root,root,755)
