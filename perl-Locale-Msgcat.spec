@@ -1,8 +1,9 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Msgcat module for perl (Locale)
+Summary(pl):	Modu³ perla Msgcat
 Name:		perl-Locale-Msgcat
 Version:	1.03
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -15,6 +16,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Msgcat module for perl.
+
+%description -l pl
+Modu³ perla Msgcat.
 
 %prep
 %setup -q -n Msgcat-%{version} 
