@@ -2,7 +2,7 @@
 Summary:	Msgcat module for perl (Locale)
 Name:		perl-Locale-Msgcat
 Version:	1.03
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
