@@ -8,7 +8,7 @@ License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-authors/id/CHRWOLF/Msgcat-%{version}.tar.gz
+Source0:	 ftp://ftp.perl.org/pub/CPAN/modules/by-module/Msgcat/Msgcat-%{version}.tar.gz
 URL:		http://www.cpan.org/
 BuildRequires:	perl >= 5.6
 Requires:	perl >= 5.6
