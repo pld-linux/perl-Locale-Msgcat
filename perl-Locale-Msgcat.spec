@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Locale
 %define	pnam	Msgcat
@@ -30,14 +34,17 @@ niektórych systemach.
 
 %build
 %{__perl} Makefile.PL \
-	OPTIMIZE="%{rpmcflags}" \
 	INSTALLDIRS=vendor
-%{__make}
+%{__make} \
+	OPTIMIZE="%{rpmcflags}"
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
