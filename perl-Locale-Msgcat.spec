@@ -23,7 +23,7 @@ Version:	1.03
 Release:	6
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 URL:		http://www.cpan.org/
 BuildRequires:	perl >= 5.6
 Requires:	perl >= 5.6
