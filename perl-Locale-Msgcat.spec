@@ -43,7 +43,7 @@ systemach.
 %setup -q -n %{pnam}-%{version}
 
 %build
-perl Makefile.PL OPTIMIZE="%{rpmcflags}"
+%{__perl} Makefile.PL OPTIMIZE="%{rpmcflags}"
 %{__make}
 
 %install
