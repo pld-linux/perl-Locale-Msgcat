@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Locale
-%define	pnam	Msgcat
+%define		pdir	Locale
+%define		pnam	Msgcat
 Summary:	Locale::Msgcat - access the XPG4 message catalog functions
 Summary(pl):	Locale::Msgcat - dostêp do funkcji katalogów komunikatów XPG4
 Name:		perl-Locale-Msgcat
