@@ -1,7 +1,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Locale
 %define	pnam	Msgcat
-Summary:	%{pdir}::%{pnam} perl module 
+Summary:	%{pdir}::%{pnam} perl module
 Summary(cs):	Modul %{pdir}::%{pnam} pro Perl
 Summary(da):	Perlmodul %{pdir}::%{pnam}
 Summary(de):	%{pdir}::%{pnam} Perl Modul
@@ -40,10 +40,10 @@ funkcje catopen(3), catgets(3) and catclose(4), dostêpne na niektórych
 systemach.
 
 %prep
-%setup -q -n %{pnam}-%{version} 
+%setup -q -n %{pnam}-%{version}
 
 %build
-perl Makefile.PL OPTIMIZE="%{rpmcflags}" 
+perl Makefile.PL OPTIMIZE="%{rpmcflags}"
 %{__make}
 
 %install
@@ -51,10 +51,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-%clean 
+%clean
 rm -rf $RPM_BUILD_ROOT
 
-%files 
+%files
 %defattr(644,root,root,755)
 %{perl_sitearch}/Locale/*.pm
 %dir %{perl_sitearch}/auto/Locale/Msgcat
