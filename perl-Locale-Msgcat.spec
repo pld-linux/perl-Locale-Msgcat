@@ -1,23 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Locale
 %define	pnam	Msgcat
-Summary:	%{pdir}::%{pnam} perl module
-Summary(cs):	Modul %{pdir}::%{pnam} pro Perl
-Summary(da):	Perlmodul %{pdir}::%{pnam}
-Summary(de):	%{pdir}::%{pnam} Perl Modul
-Summary(es):	Módulo de Perl %{pdir}::%{pnam}
-Summary(fr):	Module Perl %{pdir}::%{pnam}
-Summary(it):	Modulo di Perl %{pdir}::%{pnam}
-Summary(ja):	%{pdir}::%{pnam} Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	%{pdir}::%{pnam} ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul %{pdir}::%{pnam}
-Summary(pl):	Modu³ perla %{pdir}::%{pnam}
-Summary(pt_BR):	Módulo Perl %{pdir}::%{pnam}
-Summary(pt):	Módulo de Perl %{pdir}::%{pnam}
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl %{pdir}::%{pnam}
-Summary(sv):	%{pdir}::%{pnam} Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl %{pdir}::%{pnam}
-Summary(zh_CN):	%{pdir}::%{pnam} Perl Ä£¿é
+Summary:	Locale::Msgcat - access the XPG4 message catalog functions
+#Summary(pl):	Locale::Msgcat - dostêp do funkcji katalogu XPG4 (?)
 Name:		perl-Locale-Msgcat
 Version:	1.03
 Release:	7
@@ -26,7 +11,6 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 URL:		http://www.cpan.org/
 BuildRequires:	perl-devel >= 5.6
-Requires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
