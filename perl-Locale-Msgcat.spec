@@ -30,7 +30,7 @@ niektórych systemach.
 %build
 %{__perl} Makefile.PL \
 	OPTIMIZE="%{rpmcflags}" \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
