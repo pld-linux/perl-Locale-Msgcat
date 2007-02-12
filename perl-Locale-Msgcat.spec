@@ -6,7 +6,7 @@
 %define		pdir	Locale
 %define		pnam	Msgcat
 Summary:	Locale::Msgcat - access the XPG4 message catalog functions
-Summary(pl):	Locale::Msgcat - dostêp do funkcji katalogów komunikatów XPG4
+Summary(pl.UTF-8):   Locale::Msgcat - dostÄ™p do funkcji katalogÃ³w komunikatÃ³w XPG4
 Name:		perl-Locale-Msgcat
 Version:	1.03
 Release:	8
@@ -24,10 +24,10 @@ The Locale::Msgcat module allows access to the XPG4 message catalog
 functions (catopen(3), catgets(3) and catclose(3)), which are
 available on some systems.
 
-%description -l pl
-Modu³ Locale::Msgcat oferuje dostêp do katalogu komunikatów XPG4
-poprzez funkcje catopen(3), catgets(3) and catclose(3), dostêpne na
-niektórych systemach.
+%description -l pl.UTF-8
+ModuÅ‚ Locale::Msgcat oferuje dostÄ™p do katalogu komunikatÃ³w XPG4
+poprzez funkcje catopen(3), catgets(3) and catclose(3), dostÄ™pne na
+niektÃ³rych systemach.
 
 %prep
 %setup -q -n %{pnam}-%{version}
