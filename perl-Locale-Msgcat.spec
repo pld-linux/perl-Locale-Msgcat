@@ -13,9 +13,9 @@ Release:	9
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Locale/%{pnam}-%{version}.tar.gz
 # Source0-md5:	8dbfee7b81e94cf946c9f28ab0bc5291
-URL:		http://www.cpan.org/
+URL:		http://search.cpan.org/dist/Locale-Msgcat/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
