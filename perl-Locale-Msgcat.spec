@@ -9,7 +9,7 @@ Summary:	Locale::Msgcat - access the XPG4 message catalog functions
 Summary(pl.UTF-8):	Locale::Msgcat - dostęp do funkcji katalogów komunikatów XPG4
 Name:		perl-Locale-Msgcat
 Version:	1.03
-Release:	10
+Release:	11
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
