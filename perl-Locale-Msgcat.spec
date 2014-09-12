@@ -55,5 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{perl_vendorarch}/Locale/*.pm
 %dir %{perl_vendorarch}/auto/Locale/Msgcat
-%{perl_vendorarch}/auto/Locale/Msgcat/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Locale/Msgcat/*.so
