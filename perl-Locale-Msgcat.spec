@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Locale
 %define		pnam	Msgcat
 Summary:	Locale::Msgcat - access the XPG4 message catalog functions
